@@ -25,9 +25,7 @@
     }
   },
   "require": {
-    "ext-curl": "*",
-    "guzzlehttp/guzzle": "^6.3"
-
+    "ext-curl": "*"
   },
   "require-dev": {
     "phpunit/phpunit": "^5.7",
