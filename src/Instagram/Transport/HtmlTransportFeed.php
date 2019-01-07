@@ -36,7 +36,7 @@ class HtmlTransportFeed extends TransportFeed
             ]
         ];
 
-        $res = $this->client->request('GET', $endpoint, $headers);
+        $res = $this->client->get($endpoint, $headers);
 
         $html = (string)$res->getBody();
 

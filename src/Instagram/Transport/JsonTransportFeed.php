@@ -68,7 +68,7 @@ class JsonTransportFeed extends TransportFeed
 
         $endpoint = self::INSTAGRAM_ENDPOINT . 'graphql/query/?query_hash=' . self::QUERY_HASH . '&variables=' . json_encode($variables);
 
-        $res = $this->client->request('GET', $endpoint, $headers);
+        $res = $this->client->get($endpoint, $headers);
 
         $data = (string)$res->getBody();
         $data = json_decode($data);
